@@ -13,7 +13,7 @@ app.set('view engine', 'hbs')
 app.set('views', templatePath)
 app.use(express.urlencoded({extended:false}))
 app.get('/', (req,res) => {
-    res.render('login')
+    res.render('login') 
 })
 
 app.post('/login', async (req, res) => {
